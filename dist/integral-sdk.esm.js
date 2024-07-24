@@ -514,7 +514,7 @@ var Q192 = /*#__PURE__*/JSBI.exponentiate(Q96, /*#__PURE__*/JSBI.BigInt(2));
 var MaxUint256 = /*#__PURE__*/JSBI.BigInt('0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff');
 
 var ChainId = {
-  BSCTestnet: 97
+  BSC: 56
 };
 
 var ADDRESS_ZERO = '0x0000000000000000000000000000000000000000';
@@ -522,8 +522,8 @@ var INITIAL_POOL_FEE = 100;
 var DEFAULT_TICK_SPACING = 60;
 
 var _POOL_DEPLOYER_ADDRES, _POOL_INIT_CODE_HASH;
-var POOL_DEPLOYER_ADDRESSES = (_POOL_DEPLOYER_ADDRES = {}, _POOL_DEPLOYER_ADDRES[ChainId.BSCTestnet] = '0x824EAF0B3f182C1D1cf72229b9EcB16deD88b8CF', _POOL_DEPLOYER_ADDRES);
-var POOL_INIT_CODE_HASH = (_POOL_INIT_CODE_HASH = {}, _POOL_INIT_CODE_HASH[ChainId.BSCTestnet] = '0x68fa816c1592e7672e1b2cc42005066ff83abab3690d0e1500b0b51643314b10', _POOL_INIT_CODE_HASH);
+var POOL_DEPLOYER_ADDRESSES = (_POOL_DEPLOYER_ADDRES = {}, _POOL_DEPLOYER_ADDRES[ChainId.BSC] = '0xE34CDa68C49E2589cf807552aDf719Eaa4f625fB', _POOL_DEPLOYER_ADDRES);
+var POOL_INIT_CODE_HASH = (_POOL_INIT_CODE_HASH = {}, _POOL_INIT_CODE_HASH[ChainId.BSC] = '0x68fa816c1592e7672e1b2cc42005066ff83abab3690d0e1500b0b51643314b10', _POOL_INIT_CODE_HASH);
 
 /**
  * Computes a pool address
@@ -3130,7 +3130,7 @@ var _WNATIVE;
 /**
  * Known WETH9 implementation addresses, used in our implementation of Ether#wrapped
  */
-var WNATIVE = (_WNATIVE = {}, _WNATIVE[ChainId.BSCTestnet] = /*#__PURE__*/new Token(ChainId.BSCTestnet, '0x094616f0bdfb0b526bd735bf66eca0ad254ca81f', 18, 'WBNB', 'WRAPPED BNB'), _WNATIVE);
+var WNATIVE = (_WNATIVE = {}, _WNATIVE[ChainId.BSC] = /*#__PURE__*/new Token(ChainId.BSC, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'WRAPPED BNB'), _WNATIVE);
 
 /**
  * Native is the main usage of a 'native' currency

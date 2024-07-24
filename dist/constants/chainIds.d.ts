@@ -1,3 +1,3 @@
 export declare const ChainId: {
-    BSCTestnet: number;
+    BSC: number;
 };

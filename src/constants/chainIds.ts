@@ -1,3 +1,3 @@
 export const ChainId = {
-    BSCTestnet: 97,
+    BSC: 56,
 }

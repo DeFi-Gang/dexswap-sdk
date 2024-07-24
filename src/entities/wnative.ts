@@ -5,9 +5,9 @@ import { Token } from './Token';
  * Known WETH9 implementation addresses, used in our implementation of Ether#wrapped
  */
 export const WNATIVE: { [chainId: number]: Token } = {
-  [ChainId.BSCTestnet]: new Token(
-    ChainId.BSCTestnet,
-    '0x094616f0bdfb0b526bd735bf66eca0ad254ca81f',
+  [ChainId.BSC]: new Token(
+    ChainId.BSC,
+    '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
     18,
     'WBNB',
     'WRAPPED BNB'
